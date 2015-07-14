@@ -10,9 +10,9 @@ This is a base project structure that includes gulp/browserify structure to get 
 Use the [openweathermap API](http://openweathermap.org/api) to create a page that:
 * Has a form to search by city name
 * Shows the hourly 5 day forecast for that city
+* Use API key: a03414aadd7f17cd1a79948b90cc5647, or generate your own
 
 ## Bonus:
 
+* Group the forecasts by day
 * Form allows switch between Celcius and Fahrenheit
-* Query string value will kick off auto search
-
