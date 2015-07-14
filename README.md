@@ -3,8 +3,7 @@
 This is a base project structure that includes gulp/browserify structure to get started on the task. 
 
 * Run "npm install" before you get started. 
-* Run "gulp" to build the initial JS and SCSS build
-* Run "gulp watch" to watch for any changes in JS or styles
+* Run "gulp" to build the initial JS and SCSS build, then immediately start a "watch" for any changes in JS or styles
 
 ## The Task:
 

@@ -8,10 +8,10 @@ var gulp = require('gulp'),
     source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer');
 
-gulp.task('default', ['browserify', 'sass']);
+gulp.task('default', ['browserify', 'sass', 'watch']);
 
 gulp.task('sass', function() {
-    gulp.src(['./src/scss/styles.scss', './src/js/**/*.scss'])
+    gulp.src(['./src/scss/**/*.scss', './src/js/**/*.scss'])
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('./dist/css'));
 });
@@ -27,6 +27,8 @@ gulp.task('browserify', function() {
 
 gulp.task('watch', function () {
     gulp.watch('./src/js/**/*.js', ['browserify']);
+    gulp.watch('./src/js/**/*.html', ['browserify']);
+    gulp.watch('./src/js/**/*.json', ['browserify']);
     gulp.watch('./src/scss/**/*.scss', ['sass']);
     gulp.watch('./src/js/**/*.scss', ['sass']);
 });
